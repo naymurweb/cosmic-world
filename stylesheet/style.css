@@ -1,3 +1,4 @@
+/* base css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 * {
@@ -8,4 +9,50 @@
 body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+}
+
+/* global css */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+
+/* header css */
+header{
+    background-image: url('../images/cloud.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.542);
+    background-blend-mode: overlay;
+
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: .2s linear;
+}
+.navbar ul li a:hover{
+    color: #FF008E;
 }
