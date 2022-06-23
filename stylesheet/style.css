@@ -12,25 +12,59 @@ body {
 }
 
 /* global css */
+img {
+    width: 100%;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
     padding: 50px;
 }
 
+.btn {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #c21273, #FF008E);
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0%;
+}
+
+.btn:active {
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.highlight {
+    color: #FF008E;
+}
+
 
 
 /* header css */
-header{
+header {
     background-image: url('../images/cloud.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(0, 0, 0, 0.542);
     background-blend-mode: overlay;
 
 
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -53,6 +87,52 @@ header{
     padding: 10px;
     transition: .2s linear;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     color: #FF008E;
+}
+
+/* banner-section */
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.banner-container {
+    max-width: 1140px;
+    padding: 50px, 50px, 0, 50px;
+    margin: 0 auto;
+
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-left h1,
+p {
+    color: white;
+}
+
+.banner-left p {
+    margin: 20px 0;
+}
+
+.border-left .btn {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.banner-right img {
+    width: 81%;
+}
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
