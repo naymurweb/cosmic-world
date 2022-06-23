@@ -229,3 +229,10 @@ input, textarea{
     outline: 0;
     border: 2px solid #FF008E;
 }
+
+/* footer section */
+.footer p{
+    color: #000;
+    text-align: center;
+   font-size: 16px;
+}
